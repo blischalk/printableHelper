@@ -1,0 +1,91 @@
+
+==================== FINAL INTERFACE ====================
+2016-07-19 04:13:36.564643 UTC
+
+interface print_JleMP8rVKxN1s7oLXqSLDl:Lib 7103
+  interface hash: b737e2c829470509376121341b4e2de3
+  ABI hash: 0f3195e2b1bcabca381c6d3f6e730611
+  export-list hash: 819e7c31eb587e9fc32418cd15c7a298
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4c0a7b65a6dddbc4161c2e2bfabe3dc3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.parseArgs
+module dependencies:
+package dependencies: base-4.8.2.0 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Bits 87551525e7ef366d0fc4cad44e8b1bfc
+import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Debug.Trace 6660afb6094d69397ea084364da8f950
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Enum debc6de3086023a15993ab0cecffb90b
+import  -/  base-4.8.2.0:GHC.IO.Handle.FD 43ef1c409a5b322c789fa1f7098e143b
+import  -/  base-4.8.2.0:GHC.IO.Handle.Text 06d2dc7704bcfe88a2157fd04748ace5
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.Environment ba6e36000c8274703cf7786fbe8d0f6c
+import  -/  base-4.8.2.0:System.Exit f5581af4ad998e898da01fdc74c2769b
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  base-4.8.2.0:Text.Printf 0276d4e7547f991f04a90f6b1e7f1f46
+import  -/  base-4.8.2.0:Text.Read ef0ef92fb7358ae94bab089940adfd2a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+c3883429e7129a65ad0d7f80c7973efb
+  $sprintf3 ::
+    GHC.Base.String -> [Text.Printf.UPrintf] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ fmts :: GHC.Base.String
+                   args :: [Text.Printf.UPrintf] ->
+                 GHC.Base.map
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   Text.Printf.$fIsCharChar_$cfromChar
+                   (Text.Printf.uprintfs
+                      fmts
+                      (GHC.List.reverse1
+                         @ Text.Printf.UPrintf
+                         args
+                         (GHC.Types.[] @ Text.Printf.UPrintf))
+                      (GHC.Types.[] @ GHC.Types.Char))) -}
+e6e45cf8c29d9e9b843c7f6cb23fb632
+  type AddressByteCollection = [[GHC.Types.Int]]
+05f6d0e57001afc6c242cd6d6919f6a4
+  type Carry = GHC.Types.Int
+26255d76891f9cd9eb8e76ab53fbae79
+  type EndingAddress = GHC.Types.Int
+7548edc79a058f277817670491a81d55
+  type SearchBytes = [[GHC.Types.Int]]
+3a4bc03819b8ee7a27d628c0915bccc5
+  type StartingAddress = GHC.Types.Int
+24806aadf9854fedae2131c0004f6d8e
+  type Subtraction = GHC.Types.Int
+fc3ae75448f7dffe17390a016b1d366f
+  type SubtractionColumnCollection = [[GHC.Types.Int]]
+0825335d62205a9d92430efa07703c3f
+  type Subtractions = [Lib.Subtraction]
+7e839906219d151b280f49b755bf6e12
+  parseArgs :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.parseArgs1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+a6303878129d8220b2b285d975220211
+  parseArgs1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
