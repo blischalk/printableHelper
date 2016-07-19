@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2016-07-19 04:13:36.564643 UTC
+2016-07-19 22:50:39.267626 UTC
 
 interface print_JleMP8rVKxN1s7oLXqSLDl:Lib 7103
-  interface hash: b737e2c829470509376121341b4e2de3
+  interface hash: 41c58291371125d44cc8965f9dcb4111
   ABI hash: 0f3195e2b1bcabca381c6d3f6e730611
   export-list hash: 819e7c31eb587e9fc32418cd15c7a298
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -25,7 +25,6 @@ import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
 import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
 import  -/  base-4.8.2.0:Debug.Trace 6660afb6094d69397ea084364da8f950
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
-import  -/  base-4.8.2.0:GHC.Enum debc6de3086023a15993ab0cecffb90b
 import  -/  base-4.8.2.0:GHC.IO.Handle.FD 43ef1c409a5b322c789fa1f7098e143b
 import  -/  base-4.8.2.0:GHC.IO.Handle.Text 06d2dc7704bcfe88a2157fd04748ace5
 import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
