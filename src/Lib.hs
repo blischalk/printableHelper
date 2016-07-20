@@ -14,6 +14,9 @@ type Carry                       = Int
 type StartingAddress             = Int
 type EndingAddress               = Int
 type Subtraction                 = Int
+type WordInt                     = Int
+type BytePlace                   = Int
+type MaskedByte                  = Int
 type Subtractions                = [Subtraction]
 type AddressByteCollection       = [[Int]]
 type SearchBytes                 = [[Int]]
@@ -68,7 +71,7 @@ getBytes :: StartingAddress -> EndingAddress -> AddressByteCollection
 getBytes s e = [[extractByte x b | b <- [0..3]]| x <- [s,e]]
 
 
-extractByte :: Int -> Int -> Int
+extractByte :: WordInt -> BytePlace -> MaskedByte
 extractByte word b = let offset          = b * bitsInByte
                          mask            = shift 0xff offset
                          byteFromMasking = shift (word .&. mask) (- offset)
@@ -91,13 +94,17 @@ calcBytesForWords ((x:xs) : (y:ys) : _) c r s =
 calcBytesForWords _ _ r _ = r
 
 
+findMatch :: (Num a, Bits a) => a -> a -> a -> [[a]] -> [[a]]
 findMatch sb eb c s =
     take 1 $ filter (\i ->  sb == (0x000000ff .&. (foldl (+) 0 (eb : c : i)))) s
 
 
+calcCarry :: (Num a, Bits a) => a -> a -> [a] -> a
 calcCarry destByte carry row =
     shift (foldl (+) 0 (destByte : carry : row) .&. 0x0000ff00) (- bitsInByte)
 
+
+filterSearchSet :: (Foldable t, Foldable t1) => [t a] -> [t1 a1] -> [t a]
 filterSearchSet s match = filter (\n -> (length n) == (length $ head match)) s
 
 
